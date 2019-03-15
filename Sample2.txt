@@ -1,0 +1,1 @@
+This is a second text file created to verify the commit changes in GITHUB
