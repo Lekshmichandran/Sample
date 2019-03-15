@@ -1,0 +1,19 @@
+Python program to verify the count of the words in a file.
+import os
+import shutil
+pathi="D:/GPCDATACLEANSE/input.txt"
+pathsrc="D:/GPCDATACLEANSE/OUT/"
+patho="D:/GPCDATACLEANSE/eaout/"
+infile = open(pathi,'r',errors="ignore")
+line_list = infile.readlines()
+for line in line_list:
+    newpath=pathsrc+line+".CBL"
+    newpatho=patho+line+".CBL"
+    newpatho1=newpatho.replace('\n','')
+    newpath1=newpath.replace('\n','')
+    print(newpath1)
+    print(newpatho1)
+    shutil.copy2(newpath1,newpatho1)
+infile.close()
+    
+    
